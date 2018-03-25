@@ -1,0 +1,18 @@
+<div class="container">
+    <h1 class="h">Say Hi</h1>
+  <div class="jumbotron">
+      <span class="ui-float-label s">
+          <input  [(ngModel)]="username" id="float-input" type="text" size="30" required pInputText> 
+          <label for="float-input">Your Name</label>
+      </span><br>
+  <button class="btn btn-block" (click)="ins()" pButton type="button" label="Click here to say Hi" ><i class="fa fa fa-angellist"></i></button>
+  <button class="l" [routerLink]=" ['/login']" pButton type="button" label="Logout" ><i class="fa fa-sign-out"></i></button>
+</div>
+</div>
+<div> 
+    <p-dataTable [value]="rows">
+        <p-column [style]="{'text-align':'center','width':'10%'}" field="id" header="ID"></p-column>
+        <p-column [style]="{'text-align':'center','width':'20%'}"  field="username" header="Name of Person who sent HI"></p-column>
+        <p-column [style]="{'text-align':'center','width':'30%'}"  field="datetime" header="Datetime"></p-column>
+    </p-dataTable>
+    </div>

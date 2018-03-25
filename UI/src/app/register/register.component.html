@@ -1,0 +1,18 @@
+<div class="container">
+<h1 class="h">Register</h1>
+<div class="in jumbotron"><span class="ui-float-label">
+    <input  [(ngModel)]="email" id="float-input" type="text" size="30" required pInputText> 
+    <label for="float-input">Email</label>
+</span><br>
+<span class="ui-float-label">
+    <input  [(ngModel)]="password" id="float-input" type="password" size="30" required pInputText> 
+    <label for="float-input">Password</label>
+</span><br>
+<span class="ui-float-label">
+    <input [(ngModel)]="cpassword" id="float-input" type="password" size="30" appConfirmEqualValidator="password"  required pInputText> 
+    <label for="float-input">Confirm Password</label> 
+</span><br>
+<button class="s" (click)="insert()" onClick="document.location.reload(true)" pButton type="button" label="Register" ><i class="fa fa-paper-plane-o"></i></button>
+</div>
+<button class="l" [routerLink]=" ['./login']" pButton type="button" label="Login" ><i class="fa fa-sign-in"></i></button>
+</div>
