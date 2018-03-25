@@ -7,7 +7,6 @@ import { RegisterComponent } from './register/register.component';
 import { RouterModule } from '@angular/router';
 import {InputTextModule} from 'primeng/inputtext';
 import {ButtonModule} from 'primeng/button';
-import { ConfirmEqualValidatorDirective } from './shared/confirm-equal-validator.directive';
 import { LoginComponent } from './login/login.component';
 import { MainComponent } from './main/main.component';
 import {TableModule} from 'primeng/table';
@@ -16,7 +15,6 @@ import {DataTableModule} from 'primeng/datatable';
   declarations: [
     AppComponent,
     RegisterComponent,
-    ConfirmEqualValidatorDirective,
     LoginComponent,
     MainComponent
   ],
