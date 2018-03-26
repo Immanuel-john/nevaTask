@@ -8,7 +8,7 @@
         <input  [(ngModel)]="password" id="float-input" type="password" size="30" required pInputText> 
         <label for="float-input">Password</label>
     </span><br>
-    <button class="s" (click)="login()" pButton type="button" label="Login" ><i class="fa fa-sign-in"></i></button>
+    <button class="s" onClick="document.location.reload(true)" (click)="login()" pButton type="button" label="Login" ><i class="fa fa-sign-in"></i></button>
     </div>
     <button class="l" [routerLink]=" ['']" pButton type="button" label="Register" ><i class="fa fa-paper-plane-o"></i></button>
     </div>

@@ -12,7 +12,8 @@ export class LoginComponent implements OnInit {
   email=""
   password=""
   error=""
-  rows=[];  
+  rows=[]; 
+  a=0;
   constructor(private http:Http, private router:Router) { }
   
   ngOnInit() {
@@ -33,10 +34,14 @@ export class LoginComponent implements OnInit {
   login=function(){
     for(let i = 0; i < this.rows.length;i++)
     if(this.email==this.rows[i].email&&this.password==this.rows[i].password){
-        this.router.navigate(['main'])
+        this.router.navigate(['main']);
+        this.a=1;
+
     }else{
         this.error="Invalid Credentials"
     }
-    
+    if(this.a==0)
+      window.alert(this.error);
+
   }
 }
